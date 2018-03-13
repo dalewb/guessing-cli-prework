@@ -12,7 +12,7 @@ def run_guessing_game(limit=10, guesses=3)
   while count < guesses
     puts "Pick a number:"
     choice = gets.chomp 
-    if choice == correct_answer 
+    if choice.to_i == correct_answer 
       return "#{choice} was correct!"
       break 
     else 

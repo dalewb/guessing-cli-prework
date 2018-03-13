@@ -7,6 +7,8 @@ def run_guessing_game(limit=10, guesses=3)
     if choice.to_i == correct_answer 
       return "#{choice} was correct!"
       break 
+    elsif choice == exit 
+      return "Goodbye"
     else 
       puts "Guess again"
     end 

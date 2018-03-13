@@ -13,13 +13,14 @@ def run_guessing_game(limit=10)
     puts "Pick a number:"
     choice = gets.chomp 
     if choice == correct_answer 
-      puts "You are correct!"
+      return "#{choice} was correct!"
       break 
     else 
       puts "Guess again"
     end 
     count += 1 
   end 
+  "Play again"
 end 
 
 run_guessing_game

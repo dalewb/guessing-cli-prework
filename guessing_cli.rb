@@ -17,4 +17,3 @@ def run_guessing_game(limit=6, guesses=1)
   "The computer guessed #{correct_answer}."
 end 
 
-# run_guessing_game

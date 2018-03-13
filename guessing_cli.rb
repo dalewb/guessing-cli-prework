@@ -5,7 +5,7 @@ def run_guessing_game(limit=10, guesses=3)
     puts "Pick a number:"
     choice = gets.chomp 
     if choice.to_i == correct_answer 
-      return "You guessed the correct answer"
+      return "You guessed the correct answer!"
       break 
     elsif choice == exit 
       return "Goodbye"

@@ -18,6 +18,8 @@ def run_guessing_game(limit=10)
     else 
       puts "Guess again"
     end 
-    i += 1 
+    count += 1 
   end 
 end 
+
+run_guessing_game

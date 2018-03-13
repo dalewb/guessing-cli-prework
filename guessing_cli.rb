@@ -6,10 +6,10 @@ def rand_num
 end 
 
 
-def run_guessing_game(limit=10)
+def run_guessing_game(limit=10, guesses=3)
   correct_answer = rand(limit)
   count = 0 
-  while count < 3 
+  while count < guesses
     puts "Pick a number:"
     choice = gets.chomp 
     if choice == correct_answer 
@@ -20,7 +20,7 @@ def run_guessing_game(limit=10)
     end 
     count += 1 
   end 
-  "Play again"
+  "The correct answer was #{correct_answer}"
 end 
 
 run_guessing_game

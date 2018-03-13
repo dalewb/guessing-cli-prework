@@ -1,4 +1,4 @@
-def run_guessing_game(limit=10, guesses=1)
+def run_guessing_game(limit=6, guesses=1)
   correct_answer = rand(limit)
   count = 0
   while count < guesses
@@ -17,4 +17,4 @@ def run_guessing_game(limit=10, guesses=1)
   "The computer guessed #{correct_answer}."
 end 
 
-run_guessing_game
+# run_guessing_game

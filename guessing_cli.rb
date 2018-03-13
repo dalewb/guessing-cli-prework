@@ -6,6 +6,7 @@ def rand_num
 end 
 
 
-def run_guessing_game
+def run_guessing_game(limit=10)
+  correct_answer = rand(limit)
   
 end 

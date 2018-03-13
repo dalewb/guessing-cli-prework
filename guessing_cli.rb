@@ -1,6 +1,6 @@
-def run_guessing_game(limit=10, guesses=3)
+def run_guessing_game(limit=10, guesses=1)
   correct_answer = rand(limit)
-  count = 0 
+  count = 0
   while count < guesses
     puts "Pick a number:"
     choice = gets.chomp 
@@ -10,11 +10,11 @@ def run_guessing_game(limit=10, guesses=3)
     elsif choice == exit 
       return "Goodbye"
     else 
-      puts "Guess again"
+      break
     end 
     count += 1 
   end 
-  "The correct answer was #{correct_answer}"
+  "The computer guessed #{correct_answer}"
 end 
 
 run_guessing_game

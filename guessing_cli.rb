@@ -2,7 +2,7 @@ def run_guessing_game(limit=10, guesses=1)
   correct_answer = rand(limit)
   count = 0
   while count < guesses
-    puts "Pick a number:"
+    puts "Guess a number between 1 and 6."
     choice = gets.chomp 
     if choice.to_i == correct_answer 
       return "You guessed the correct answer!"
@@ -14,7 +14,7 @@ def run_guessing_game(limit=10, guesses=1)
     end 
     count += 1 
   end 
-  "The computer guessed #{correct_answer}"
+  "The computer guessed #{correct_answer}."
 end 
 
 run_guessing_game
